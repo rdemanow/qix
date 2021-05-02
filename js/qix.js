@@ -2,10 +2,11 @@ function setup() {
   pageWidth = document.documentElement.scrollWidth
   qixWidth = Math.trunc(pageWidth * 0.7)
   qixHeight = Math.trunc(2*qixWidth/3)
-  createCanvas(qixWidth, qixHeight);
+  const qCanv = createCanvas(qixWidth, qixHeight);
+  qCanv.parent(document.getElementById('qixCanvas'));
 }      
 
-function load() {
+function qix() {
   let lines = [];
   const qixDelta = 10;
   
