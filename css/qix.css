@@ -10,4 +10,30 @@
 
 body {
     font-family: 'myLucidaConsole';
+    background: DarkSlateGrey;
+    color: Wheat;
+}
+
+#headder {
+    background: DarkSlateGrey;
+    color: Wheat;
+    clear: both;
+    margin: 1em;
+    padding: 1em;
+}
+
+#main {
+    background: White;
+    color: DarkSlateGrey;
+    margin: 1em;
+    padding: 1em;
+}
+
+
+#footer {
+    background: DarkSlateGrey;
+    color: Wheat;
+    clear: both;
+    margin: 1em;
+    padding: 1em;
 }
