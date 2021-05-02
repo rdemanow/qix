@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'myLucidaConsole';
+  src: url('./fonts/lucon.eot'); /* IE9 Compat Modes */
+  src: url('./fonts/lucon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/lucon.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/lucon.woff') format('woff'), /* Pretty Modern Browsers */
+       url('./fonts/lucon.ttf')  format('truetype') /* Safari, Android, iOS */
+    /* url('./fonts/lucon.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: 'myLucidaConsole';
+}
