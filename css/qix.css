@@ -14,7 +14,7 @@ body {
     color: Wheat;
 }
 
-#headder {
+header {
     background: DarkSlateGrey;
     color: Wheat;
     clear: both;
@@ -22,7 +22,7 @@ body {
     padding: 1em;
 }
 
-#main {
+main {
     background: White;
     color: DarkSlateGrey;
     margin: 1em;
@@ -30,7 +30,7 @@ body {
 }
 
 
-#footer {
+footer {
     background: DarkSlateGrey;
     color: Wheat;
     clear: both;
