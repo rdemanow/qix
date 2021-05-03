@@ -1,7 +1,7 @@
 function setup() {
-  pageWidth = document.documentElement.scrollWidth
-  qixWidth = Math.trunc(pageWidth * 0.7)
-  qixHeight = Math.trunc(2*qixWidth/3)
+  pageWidth = document.getElementById("qixCanvas").clientWidth;
+  qixWidth = pageWidth; //Math.trunc(pageWidth * 0.7)
+  qixHeight = Math.trunc(2*qixWidth/3);
   const qCanv = createCanvas(qixWidth, qixHeight);
   qCanv.parent(document.getElementById('qixCanvas'));
 }      
