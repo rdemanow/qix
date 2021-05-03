@@ -7,8 +7,8 @@ function setup() {
   qCanv.parent(document.getElementById('qixCanvas'));
   nSlider = createSlider(10, 200, 40);
   cSlider = createSlider(1, 100, 10);
-  nSlider.parent(document.getElementById('qixSliders'));
-  cSlider.parent(document.getElementById('qixSliders'));
+  nSlider.parent(document.getElementById('qixNSlider'));
+  cSlider.parent(document.getElementById('qixCSlider'));
 }      
 
 function qix() {
@@ -111,6 +111,10 @@ function qix() {
     //check to see if the sliders have been adjusted
     numLines = nSlider.value();
     nLinesPerColor = cSlider.value();
+
+    //output the slider values to the HTML
+    document.getElementById("NL").innerText = numLines;
+    document.getElementById("NLPC").innerText = nLinesPerColor;
   };
   
 }
