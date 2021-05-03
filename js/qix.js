@@ -20,6 +20,11 @@ function qix() {
       x: Math.floor(Math.random() * width),
       y: Math.floor(Math.random() * height)
     },
+    {
+      red: 255,
+      green: 255,
+      blue: 255
+    },
   ]);
   
   //random slope
@@ -51,25 +56,28 @@ function qix() {
   
   //number of lines to save
   const numLines = 40;
+  let i = 0;  
+  let newRed = 255;
+  let newGreen = 255;
+  let newBlue = 255;
+  let nLinesPerColor = 10;
   
   draw = function() {
     background(0,0,0);
     
-    
     //draw the lines
-    let i = 0;
     lines.forEach(endpoint => {
-      if (i % 10 === 0) {
-        red = Math.floor(Math.random() * 255);//random(0, 255);
-        green = Math.floor(Math.random() * 255);//random(0, 255);
-        blue = Math.floor(Math.random() * 255);//random(0, 255);
-        i = 0;
-      }
-      stroke(red, green, blue);
+      stroke(endpoint[2].red, endpoint[2].green, endpoint[2].blue);
       line(endpoint[0].x, endpoint[0].y, endpoint[1].x, endpoint[1].y);
-      i++;
     });
-    
+
+    i++;
+    if (i % nLinesPerColor == 0) {
+      newRed = Math.floor(Math.random() * 255);
+      newGreen = Math.floor(Math.random() * 255);
+      newBlue = Math.floor(Math.random() * 255);
+      i = 0;
+    }
     //increment the endpoints and put the new
     //points at the front
     lines.unshift(
@@ -81,6 +89,11 @@ function qix() {
         {
           x: lines[0][1].x + delta2.x,
           y: lines[0][1].y + delta2.y
+        },
+        {
+          red: newRed,
+          green: newGreen,
+          blue: newBlue
         }
       ]
     );
