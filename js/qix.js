@@ -1,9 +1,14 @@
+let nSlider, cSlider;
 function setup() {
   pageWidth = document.getElementById("qixCanvas").clientWidth;
   qixWidth = pageWidth; //Math.trunc(pageWidth * 0.7)
   qixHeight = Math.trunc(2*qixWidth/3);
   const qCanv = createCanvas(qixWidth, qixHeight);
   qCanv.parent(document.getElementById('qixCanvas'));
+  nSlider = createSlider(10, 200, 40);
+  cSlider = createSlider(1, 100, 10);
+  nSlider.parent(document.getElementById('qixSliders'));
+  cSlider.parent(document.getElementById('qixSliders'));
 }      
 
 function qix() {
@@ -36,12 +41,6 @@ function qix() {
     x: Math.ceil(Math.random() * qixDelta),
     y: Math.ceil(Math.random() * qixDelta)
   };
-  
-  
-  //set starting color to basic white
-  let red = 255;
-  let green = 255;
-  let blue = 255;
     
   //Check bounds and randomize delta if necessary
   let check = function(position,delta,against) {
@@ -54,13 +53,12 @@ function qix() {
     }
   };
   
-  //number of lines to save
-  const numLines = 40;
+  let numLines = nSlider.value();
   let i = 0;  
   let newRed = 255;
   let newGreen = 255;
   let newBlue = 255;
-  let nLinesPerColor = 10;
+  let nLinesPerColor = cSlider.value();
   
   draw = function() {
     background(0,0,0);
@@ -99,7 +97,7 @@ function qix() {
     );
     
     //and, so the arrays don't get ridiculously large
-    if(lines.length > numLines) {
+    while(lines.length > numLines) {
       lines.pop();
     }
     
@@ -109,6 +107,10 @@ function qix() {
     delta1.y = check(lines[0][0].y, delta1.y, qixHeight);
     delta2.x = check(lines[0][1].x, delta2.x, qixWidth);
     delta2.y = check(lines[0][1].y, delta2.y, qixHeight);
+
+    //check to see if the sliders have been adjusted
+    numLines = nSlider.value();
+    nLinesPerColor = cSlider.value();
   };
   
 }
