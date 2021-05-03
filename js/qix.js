@@ -1,10 +1,12 @@
 let nSlider, cSlider;
 function setup() {
   pageWidth = document.getElementById("qixCanvas").clientWidth;
-  qixWidth = pageWidth; //Math.trunc(pageWidth * 0.7)
+  qixWidth = Math.trunc(pageWidth * 0.8);
   qixHeight = Math.trunc(2*qixWidth/3);
+
   const qCanv = createCanvas(qixWidth, qixHeight);
   qCanv.parent(document.getElementById('qixCanvas'));
+  
   nSlider = createSlider(10, 200, 40);
   cSlider = createSlider(1, 100, 10);
   nSlider.parent(document.getElementById('qixNSlider'));
