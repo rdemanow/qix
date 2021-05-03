@@ -113,8 +113,8 @@ function qix() {
     nLinesPerColor = cSlider.value();
 
     //output the slider values to the HTML
-    document.getElementById("NL").innerText = numLines;
-    document.getElementById("NLPC").innerText = nLinesPerColor;
+    document.getElementById("NL").innerText = `Lines: ${numLines}`;
+    document.getElementById("NLPC").innerText = `Lines per Color: ${nLinesPerColor}`;
   };
   
 }
