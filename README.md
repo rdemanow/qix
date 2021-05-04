@@ -17,9 +17,10 @@ and number of lines per color to sliders the viewer can use to dynamically
 interact with the demo
 
 ### To Do
-[] Make the viewing window auto-resize itself when the size of the viewport changes (e.g. the user rotates their phone/tablet, resizes the browser window, or pops up the developer tools.)
+- [ ] Make the viewing window auto-resize itself when the size of the viewport changes (e.g. the user rotates their phone/tablet, resizes the browser window, or pops up the developer tools.)
+- [ ] Get the demo to display directly on this page, instead of having to navigate to another server
 
-# QIX
+___
+# Demo
+[View the demo](http://richdphoto.com/qix)
 
-<iframe src="https://raw.githubusercontent.com/rdemanow/qix/main/foriframe.html" title="QIX" onload="qix()" height = 500>
-</iframe>
