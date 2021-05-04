@@ -18,3 +18,6 @@ interact with the demo
 
 ### To Do
 [] Make the viewing window auto-resize itself when the size of the viewport changes (e.g. the user rotates their phone/tablet, resizes the browser window, or pops up the developer tools.)
+
+<iframe src="http://richdphoto.com/qix/foriframe.html" title="QIX" onload="qix()" height = 500>
+</iframe>
