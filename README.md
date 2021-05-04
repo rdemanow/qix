@@ -21,5 +21,5 @@ interact with the demo
 
 # QIX
 
-<iframe src="https://github.com/rdemanow/qix/blob/main/foriframe.html" title="QIX" onload="qix()" height = 500>
+<iframe src="https://raw.githubusercontent.com/rdemanow/qix/main/foriframe.html" title="QIX" onload="qix()" height = 500>
 </iframe>
