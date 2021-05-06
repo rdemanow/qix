@@ -1,4 +1,4 @@
-let nSlider, cSlider;
+let nSlider, cSlider, pageWidth, qixWidth, qixHeight;
 function setup() {
   pageWidth = document.getElementById("qixCanvas").clientWidth;
   qixWidth = Math.trunc(pageWidth * 0.8);
