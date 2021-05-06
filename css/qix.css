@@ -9,31 +9,32 @@
 }
 
 body {
-    font-family: 'myLucidaConsole';
-    background: DarkSlateGrey;
-    color: Wheat;
+  font-family: 'myLucidaConsole';
+  background: DarkSlateGrey;
+  color: Wheat;
 }
 
 header {
-    background: DarkSlateGrey;
-    color: Wheat;
-    clear: both;
-    margin: 1em;
-    padding: 1em;
+  background: DarkSlateGrey;
+  color: Wheat;
+  clear: both;
+  margin: 1em;
+  padding: 1em;
 }
 
 main {
-    background: White;
-    color: DarkSlateGrey;
-    margin: 1em;
-    padding: 1em;
+  background: White;
+  color: DarkSlateGrey;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
 }
 
 
 footer {
-    background: DarkSlateGrey;
-    color: Wheat;
-    clear: both;
-    margin: 1em;
-    padding: 1em;
+  background: DarkSlateGrey;
+  color: Wheat;
+  clear: both;
+  margin: 1em;
+  padding: 1em;
 }
