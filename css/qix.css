@@ -30,8 +30,9 @@ main {
   text-align: center;
 }
 
-main table {
-  margin: 0 auto;
+.slider {
+  width: 200px;
+  display: inline-block;
 }
 
 footer {
