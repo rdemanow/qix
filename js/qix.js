@@ -11,7 +11,14 @@ function setup() {
   cSlider = createSlider(1, 100, 10);
   nSlider.parent(document.getElementById('qixNSlider'));
   cSlider.parent(document.getElementById('qixCSlider'));
-}      
+}
+
+function windowResized() {
+  pageWidth = document.getElementById("qixCanvas").clientWidth;
+  qixWidth = Math.trunc(pageWidth * 0.8);
+  qixHeight = Math.trunc(2 * qixWidth / 3);
+  resizeCanvas(qixWidth, qixHeight);
+}
 
 function qix() {
   let lines = [];

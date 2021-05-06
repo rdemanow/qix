@@ -17,7 +17,7 @@ and number of lines per color to sliders the viewer can use to dynamically
 interact with the demo
 
 ### To Do
-- [ ] Make the viewing window auto-resize itself when the size of the viewport changes (e.g. the user rotates their phone/tablet, resizes the browser window, or pops up the developer tools.)
+- [x] Make the viewing window auto-resize itself when the size of the viewport changes (e.g. the user rotates their phone/tablet, resizes the browser window, or pops up the developer tools.)
 - [x] Get the demo to display directly on this page, instead of having to navigate to another server (just needed to rename qix.html to index.html. Problem Solved.)
 
 ___
