@@ -30,6 +30,9 @@ main {
   text-align: center;
 }
 
+main table {
+  margin: 0 auto;
+}
 
 footer {
   background: DarkSlateGrey;
